@@ -1,0 +1,56 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    background-color: rgb(228, 173, 70);
+    height: 500px;
+}
+.register-form{
+    display: flex;
+    width: 75%;
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.register-form .form-field{
+    width: 80%;
+    height: 50px;
+    margin: 1px;
+    border-radius: 5px;
+    background-color: rgb(223, 216, 236);
+    padding: 2px;
+    font-size: 20px;
+}
+ .form-button{
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    padding: 2px;
+    cursor: pointer;
+    color: azure;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: rgb(36, 172, 58);
+}
+.success-message{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    height: 50px;
+    color: white;
+    background-color: rgb(53, 64, 212);
+    border-radius: 15px;
+}
+.warning-message{
+    color: red;
+    width: 80%;
+    margin-bottom:10px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 15px;
+    font-weight: 700;
+}
