@@ -36,7 +36,7 @@ const Form = () => {
                     value={values.lastName}
                     onChange={e =>{setValues({...values, lastName: e.target.value})}}                
                 />
-              {submitted && !values.lastName ?<span className="warning-message">Please enter a first name</span> : null }  
+              {submitted && !values.lastName ?<span className="warning-message">Please enter a last name</span> : null }  
                 <input 
                     type="text"
                     name="email"
@@ -45,7 +45,7 @@ const Form = () => {
                     value={values.email}
                     onChange={e =>{setValues({...values, email: e.target.value})}}
                 />
-               {submitted && !values.email ? <span className="warning-message">Please enter a first name</span> : null}
+               {submitted && !values.email ? <span className="warning-message">Please enter a email address</span> : null}
                 <button className="form-button">Register</button>
             </form>
         </div>
