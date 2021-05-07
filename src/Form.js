@@ -6,8 +6,9 @@ const Form = () => {
         lastName : "",
         email : ""
     });
+
     const [submitted, setSubmitted] = useState(false);
-    const [valid, setValid] = useState(false)
+    const [valid, setValid] = useState(false);
 
     const handleSubmit = e =>{
         e.preventDefault();
@@ -27,6 +28,7 @@ const Form = () => {
                     placeholder="First Name"
                     className="form-field"
                 />
+        
                {submitted && !values.firstName ? <span className="warning-message">Please enter a first name</span>:null} 
                 <input 
                     type="text" 
@@ -46,6 +48,7 @@ const Form = () => {
                     onChange={e =>{setValues({...values, email: e.target.value})}}
                 />
                {submitted && !values.email ? <span className="warning-message">Please enter a email address</span> : null}
+               
                 <button className="form-button">Register</button>
             </form>
         </div>
