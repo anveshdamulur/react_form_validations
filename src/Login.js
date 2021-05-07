@@ -27,7 +27,7 @@ const Login = () => {
                     value={values.email}
                     onChange={e =>setValues({...values,email: e.target.value})}
                 />
-                {login && !values.email  ? <span className="login__warning">Enter your email address</span>: null}  
+                {login && !values.email ? <span className="login__warning">Enter your email address</span>: null}  
                 <input 
                     type="password"
                     placeholder="password"

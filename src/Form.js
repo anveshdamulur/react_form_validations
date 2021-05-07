@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import "./Form.css"
 const Form = () => {
+
     const [values, setValues] = useState({
         firstName : "",
         lastName : "",
@@ -17,6 +18,7 @@ const Form = () => {
         }
         setSubmitted(true)
     }
+    
     return (
         <div className="form-container">
             <form className="register-form" onSubmit={handleSubmit}>
@@ -24,7 +26,7 @@ const Form = () => {
                 <input type="text"
                     name="firstName"
                     value={values.firstName}
-                    onChange={e =>{setValues({...values, firstName: e.target.value})}}
+                    onChange={e =>setValues({...values, firstName: e.target.value})}
                     placeholder="First Name"
                     className="form-field"
                 />
